@@ -11,9 +11,18 @@ import troko2 from '../assets/troko2.jpg';
 import uog from '../assets/uog.avif';
 import screen from '../assets/screen.jpg';
 import germany from '../assets/germany.jpg';
+import high from '../assets/high.jpg';
 
 const News = () => {
 const newsItems = [
+
+   {
+    title: "Meeeting with the Rwanda high commission ",
+    excerpt: "",
+    date: "Recently",
+    category: "Professional",
+    image: high
+  },
   {
     title: "Trokosi Research Kick Off Meeting with Rutgers University Team",
     excerpt: "",
@@ -70,6 +79,7 @@ const newsItems = [
     category: "Fun",
     image: dinner
   }
+   
 ];
 
 
