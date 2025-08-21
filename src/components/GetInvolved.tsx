@@ -48,7 +48,7 @@ const GetInvolved = () => {
         {/* Cards */}
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {/* Donate */}
-          <Card className="shadow-lg hover:shadow-xl transition rounded-2xl">
+          <Card className="shadow-lg hover:shadow-xl transition rounded-2xl" data-section="donate">
             <CardHeader>
               <div className="w-14 h-14 bg-primary text-white flex items-center justify-center rounded-full mx-auto shadow">
                 <Heart className="w-6 h-6" />

@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Heart, Menu, X } from 'lucide-react';
 import logo from '../../src/assets/logo.jpg';
@@ -9,6 +9,7 @@ import logo from '../../src/assets/logo.jpg';
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   const scrollToSection = (sectionId: string) => {
     if (location.pathname !== '/') {
@@ -26,17 +27,28 @@ const Navigation = () => {
 
   const handleVolunteer = () => {
     if (location.pathname === '/get-involved') {
-      scrollToSection('get-involved');
+      const element = document.getElementById('get-involved');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     } else {
-      window.location.href = '/get-involved';
+      navigate('/get-involved');
     }
   };
 
   const handleDonate = () => {
     if (location.pathname === '/get-involved') {
-      scrollToSection('get-involved');
+      const element = document.getElementById('get-involved');
+      if (element) {
+        const donateSection = element.querySelector('[data-section="donate"]');
+        if (donateSection) {
+          donateSection.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
     } else {
-      window.location.href = '/get-involved';
+      navigate('/get-involved');
     }
   };
 
