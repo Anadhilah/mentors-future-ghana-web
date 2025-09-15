@@ -17,7 +17,7 @@ const News = () => {
 const newsItems = [
 
    {
-    title: "Meeeting with the Rwanda high commission ",
+    title: "Meeeting with the Rwanda high commission .",
     excerpt: "",
     date: "Recently",
     category: "Professional",
