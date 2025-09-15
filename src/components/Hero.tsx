@@ -4,21 +4,21 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, Play } from 'lucide-react';
 
 const Hero = () => {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  // const scrollToSection = (sectionId: string) => {
+  //   const element = document.getElementById(sectionId);
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  // };
 
-  const handleJoinMission = () => {
-    scrollToSection('get-involved');
-  };
+  // const handleJoinMission = () => {
+  //   scrollToSection('get-involved');
+  // };
 
-  const handleWatchStory = () => {
-    // For now, scroll to about section
-    scrollToSection('about');
-  };
+  // const handleWatchStory = () => {
+  //   // For now, scroll to about section
+  //   scrollToSection('about');
+  // };
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
