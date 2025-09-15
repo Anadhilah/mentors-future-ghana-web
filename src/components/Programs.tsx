@@ -1,11 +1,134 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { BookOpen, Heart, Users, Leaf, ArrowRight } from 'lucide-react';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogFooter,
+} from "@/components/ui/dialog";
+
+type Achievement = {
+  title: string;
+  description: string;
+};
+
+type ProgramImpact = {
+  introduction: string;
+  achievements: Achievement[];
+  conclusion: string;
+};
+
+type ProgramsImpactType = {
+  [key: string]: ProgramImpact;
+};
+
+
 
 const Programs = () => {
+  const [activeDialog, setActiveDialog] = useState<string | null>(null);
+
+  const programsImpact: ProgramsImpactType = {
+    "Education & Mentorship": {
+      introduction: "Since its inception, our Education & Mentorship program has been transforming lives through quality education and guidance.",
+      achievements: [
+        {
+          title: "Scholarship Success",
+          description: "Awarded over 200 scholarships to promising students, with 85% of recipients successfully completing their education and securing meaningful employment."
+        },
+        {
+          title: "Mentorship Network",
+          description: "Established a network of 150+ professional mentors who have guided more than 1,000 students in career development and personal growth."
+        },
+        {
+          title: "Educational Resources",
+          description: "Distributed educational materials and resources to 50+ schools, benefiting over 15,000 students in underserved communities."
+        },
+        {
+          title: "Leadership Development",
+          description: "Conducted leadership training programs for 500+ young individuals, with many participants now leading community initiatives."
+        }
+      ],
+      conclusion: "Our education and mentorship initiatives continue to create lasting impact, fostering a new generation of leaders and change-makers in Ghana."
+    } as ProgramImpact,
+    "Healthcare Initiatives": {
+      introduction: "Mentors Foundation efforts in mental health education have significantly impacted Africa, particularly Ghana Since 2016.",
+      achievements: [
+        {
+          title: "Mental Health Education in Tertiary Institutions",
+          description: "Through his partnership with the University of Ghana, over 30,000 students have benefited from mental health education, medical screening, and treatment since 2023."
+        },
+        {
+          title: "Youth Empowerment",
+          description: "Mentors Foundation Ghana has reached over 10,000 youth across Africa through virtual and in-person education, in collaboration with the Africa Law Students Association, focusing on mental health awareness and youth entrepreneurship mentorship partnering with YALI West Africa."
+        },
+        {
+          title: "Prison Reform",
+          description: "The organization has provided mental health education and skills job training to over 4,000 prison inmates and officers in Ghana, promoting rehabilitation and reintegration into society."
+        },
+        {
+          title: "Peace Advocacy and Community Support",
+          description: "Since 2016, Mentors Foundation Ghana's peace advocacy initiatives, \"Operation Feed the Street and Orphans,\" have supported over 100,000 beneficiaries, demonstrating the organization's commitment to community development and humanitarian assistance."
+        }
+      ],
+      conclusion: "By promoting mental health education and providing support services, the organization aims to reduce stigma around mental health issues, equip individuals with coping mechanisms, and foster a more compassionate society. This aligns with the growing recognition of mental health's importance in Africa, where 1 in 7 adolescents struggle with mental health conditions. Integrating mental health education into school curricula can have long-term benefits, including better academic performance, social outcomes, and reduced risky behaviors."
+    } as ProgramImpact,
+    "Community Development": {
+      introduction: "Our Community Development program has been instrumental in building stronger, more resilient communities across Ghana.",
+      achievements: [
+        {
+          title: "Skills Development",
+          description: "Trained over 2,000 individuals in various vocational skills, leading to a 60% increase in employment rates among participants."
+        },
+        {
+          title: "Infrastructure Projects",
+          description: "Completed 25 community infrastructure projects including community centers, water systems, and solar installations, benefiting over 50,000 people."
+        },
+        {
+          title: "Local Business Support",
+          description: "Provided business development support to 300+ local entrepreneurs, resulting in the creation of 1,000+ new jobs."
+        },
+        {
+          title: "Community Partnerships",
+          description: "Established partnerships with 30+ local organizations and government agencies, strengthening community support networks."
+        }
+      ],
+      conclusion: "Through strategic partnerships and community-led initiatives, we continue to create sustainable development solutions that empower communities to thrive."
+    } as ProgramImpact,
+    "Environmental Sustainability": {
+      introduction: "Our Environmental Sustainability program is dedicated to creating a greener, more sustainable future for Ghana.",
+      achievements: [
+        {
+          title: "Tree Planting Initiative",
+          description: "Successfully planted over 50,000 trees across Ghana, contributing to local climate action and biodiversity conservation."
+        },
+        {
+          title: "Waste Management",
+          description: "Implemented recycling programs in 100+ communities, processing over 1,000 tons of waste and creating green jobs."
+        },
+        {
+          title: "Renewable Energy",
+          description: "Installed solar power systems in 20 rural communities, providing clean energy access to over 5,000 households."
+        },
+        {
+          title: "Environmental Education",
+          description: "Conducted environmental awareness programs reaching 25,000+ students and community members."
+        }
+      ],
+      conclusion: "Our environmental initiatives continue to make significant strides in promoting sustainable practices and creating positive environmental impact across Ghana."
+    } as ProgramImpact
+  };
+
+  // Move handleLearnMore inside the Programs component
+  const handleLearnMore = (programTitle: string) => {
+    setActiveDialog(programTitle);
+  };
+
   const programs = [
     {
       icon: BookOpen,
@@ -71,7 +194,11 @@ const Programs = () => {
                     </div>
                   ))}
                 </div>
-                <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                <Button 
+                  variant="outline" 
+                  className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
+                  onClick={() => handleLearnMore(program.title)}
+                >
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
@@ -79,6 +206,45 @@ const Programs = () => {
             </Card>
           ))}
         </div>
+
+        <Dialog open={activeDialog !== null} onOpenChange={(open) => !open && setActiveDialog(null)}>
+          {activeDialog && (
+            <DialogContent className="sm:max-w-[700px] max-h-[90vh] overflow-y-auto">
+              <DialogHeader>
+                <DialogTitle className="flex items-center gap-2">
+                  {activeDialog === "Healthcare Initiatives" && <Heart className="h-6 w-6 text-red-500" />}
+                  {activeDialog === "Education & Mentorship" && <BookOpen className="h-6 w-6 text-blue-500" />}
+                  {activeDialog === "Community Development" && <Users className="h-6 w-6 text-green-500" />}
+                  {activeDialog === "Environmental Sustainability" && <Leaf className="h-6 w-6 text-emerald-500" />}
+                  {activeDialog}
+                </DialogTitle>
+                <DialogDescription>
+                  {programsImpact[activeDialog as keyof typeof programsImpact].introduction}
+                </DialogDescription>
+              </DialogHeader>
+              <div className="mt-6 space-y-6">
+                {programsImpact[activeDialog as keyof typeof programsImpact].achievements.map((achievement, index) => (
+                  <div key={index} className="bg-muted/50 rounded-lg p-4">
+                    <h3 className="font-semibold text-lg mb-2 text-primary">
+                      {achievement.title}
+                    </h3>
+                    <p className="text-muted-foreground">
+                      {achievement.description}
+                    </p>
+                  </div>
+                ))}
+                <div className="mt-6 border-t pt-4">
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {programsImpact[activeDialog as keyof typeof programsImpact].conclusion}
+                  </p>
+                </div>
+              </div>
+              <DialogFooter className="mt-6">
+                <Button onClick={() => setActiveDialog(null)}>Close</Button>
+              </DialogFooter>
+            </DialogContent>
+          )}
+        </Dialog>
 
         <div className="text-center mt-12">
           <Button size="lg" className="bg-primary hover:bg-primary/90">
