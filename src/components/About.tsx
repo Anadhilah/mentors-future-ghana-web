@@ -105,7 +105,7 @@ const About = () => {
           </div>
           <div className="relative">
             <img 
-              src="/images/mentorsgh1.jpg" // Replace with your actual image name
+              src="/images/mentorsgh1.jpg" 
               alt="Mentors Foundation team at an event"
               className="rounded-lg shadow-lg w-full h-80 object-cover"
             />

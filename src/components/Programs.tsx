@@ -32,6 +32,35 @@ type ProgramsImpactType = {
 
 const Programs = () => {
   const [activeDialog, setActiveDialog] = useState<string | null>(null);
+  const [showPartnershipDialog, setShowPartnershipDialog] = useState(false);
+
+  const partnershipInfo = {
+    title: "WHY PARTNER WITH US",
+    introduction: "Partnering with Mentors Foundation can significantly advance mutual benefit in several ways:",
+    benefits: [
+      {
+        title: "Increased Visibility",
+        description: "The partnership initiative can provide a platform to showcase our works, potentially leading to increased recognition and visibility within various communities and beyond."
+      },
+      {
+        title: "Networking Opportunities",
+        description: "It will create the chance to connect with like-minded individuals, potential collaborators, and industry leaders, which can lead to new partnerships and opportunities."
+      },
+      {
+        title: "Financial Support",
+        description: "Your Financial support will further our impactful works."
+      },
+      {
+        title: "Career Advancement",
+        description: "The recognition and accolades that come with the partnership can enhance his professional reputation, potentially leading to new career opportunities or advancement within our organizations."
+      },
+      {
+        title: "Inspiration and Motivation",
+        description: "The partnership can inspire and motivate us to continue making a positive impact in various communities in Africa driving innovation and growth."
+      }
+    ],
+    conclusion: "Moreover, Partnership opportunities bring individua organizations that embody the spirit of selflessness, innovation, and resilience, which aligns with each organizations' culture of \"an inspirational life\" and creating an inspired life for every partner. This recognition can open doors to new possibilities and reinforce each other's commitment to his work."
+  };
 
   const programsImpact: ProgramsImpactType = {
     "Education & Mentorship": {
@@ -246,12 +275,51 @@ const Programs = () => {
           )}
         </Dialog>
 
-        <div className="text-center mt-12">
-          <Button size="lg" className="bg-primary hover:bg-primary/90">
-            View All Programs
-            <ArrowRight className="ml-2 h-5 w-5" />
+        <div className="text-center mt-12 space-y-4">
+          <Button 
+            size="lg" 
+            className="bg-primary hover:bg-primary/90"
+            onClick={() => setShowPartnershipDialog(true)}
+          >
+            Why Partner With Us
+            <Users className="ml-2 h-5 w-5" />
           </Button>
         </div>
+
+        {/* Partnership Dialog */}
+        <Dialog open={showPartnershipDialog} onOpenChange={setShowPartnershipDialog}>
+          <DialogContent className="sm:max-w-[700px] max-h-[90vh] overflow-y-auto">
+            <DialogHeader>
+              <DialogTitle className="flex items-center gap-2 text-2xl">
+                <Users className="h-6 w-6 text-primary" />
+                {partnershipInfo.title}
+              </DialogTitle>
+              <DialogDescription className="text-base">
+                {partnershipInfo.introduction}
+              </DialogDescription>
+            </DialogHeader>
+            <div className="mt-6 space-y-4">
+              {partnershipInfo.benefits.map((benefit, index) => (
+                <div key={index} className="bg-muted/50 rounded-lg p-4">
+                  <h3 className="font-semibold text-lg mb-2 text-primary">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {benefit.description}
+                  </p>
+                </div>
+              ))}
+              <div className="mt-6 border-t pt-4">
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {partnershipInfo.conclusion}
+                </p>
+              </div>
+            </div>
+            <DialogFooter className="mt-6">
+              <Button onClick={() => setShowPartnershipDialog(false)}>Close</Button>
+            </DialogFooter>
+          </DialogContent>
+        </Dialog>
       </div>
     </section>
   );
