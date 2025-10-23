@@ -5,27 +5,11 @@ import ceo from '../../src/assets/ceo.jpg';
 
 const About = () => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [isOurStoryExpanded, setIsOurStoryExpanded] = useState(false);
 
   const toggleText = () => {
     setIsExpanded(!isExpanded);
   };
-
-  const fullText = `
-    Mentors Foundation LBG, a charitable organization focused on poverty reduction, education, 
-    and conflict resolution, mentorship and women empowerment since 2016. Mentors Foundation Ghana 
-    partnered with institutions including the Young African Leadership Initiative (YALI-USAID) 
-    with the mandate of supplying experienced Professionals from different backgrounds to mentor 
-    youths from different African countries in Entrepreneur development in 2017 and 2018. 
-    He again partnered with The Electoral Commission, the National Commission for Civic Education, 
-    Presbyterian Church of Ghana during the 2020 electioneering period on peace talk. In 2021, 
-    the Ministry of Gender, Children and Social Protection came on board to clear and feed 
-    the street children with the aim of data collection. In 2022 till date, the Ghana Prison Service, 
-    the Ghana Police Service, University of Ghana, Legon, Rutgers University New Jersey USA have 
-    all assisted in championing various initiatives with several acknowledgements and awards for 
-    the impact in Ghana, Africa and the World.
-  `;
-
-  const truncatedText = fullText.split(' ').slice(0, 50).join(' ') + '...';
 
   return (
     <section id="about" className="py-20 bg-secondary/50">
@@ -47,11 +31,21 @@ const About = () => {
           <div className="order-1 lg:order-2">
             <h3 className="text-2xl font-bold mb-6">Meet the Founder</h3>
             <p className="text-muted-foreground mb-4">
-              Bernard Ofori-Attah is a Ghanaian social entrepreneur, philanthropist, ordained minister, and peace 
-              advocate recognized globally for his outstanding work in community development, education, and 
-              poverty reduction in Africa. Both parents are from Ashanti region of Ghana,  only Ghanaian to have 
-              been named Tallberg SNF Eliasson Global Leadership Prize 2025.
-
+              {isExpanded ? (
+                <>
+                  Bernard Ofori-Attah is a Ghanaian social entrepreneur, philanthropist, ordained minister, and peace 
+                  advocate recognized globally for his outstanding work in community development, education, and 
+                  poverty reduction in Africa. Both parents are from Ashanti region of Ghana, only Ghanaian to have 
+                  been named Tallberg SNF Eliasson Global Leadership Prize 2025.
+                  <button onClick={toggleText} className="text-primary hover:underline ml-2">Read less</button>
+                </>
+              ) : (
+                <>
+                  Bernard Ofori-Attah is a Ghanaian social entrepreneur, philanthropist, ordained minister, and peace 
+                  advocate recognized globally for his outstanding work...
+                  <button onClick={toggleText} className="text-primary hover:underline ml-2">Read more</button>
+                </>
+              )}
             </p>
             <p className="text-muted-foreground mb-4">
               He is the Official Brand Ambassador for all Law Students, Young Lawyers and Law Faculties across 54 
@@ -82,9 +76,20 @@ const About = () => {
           <div>
             <h3 className="text-2xl font-bold mb-6">Our Story</h3>
             <p className="text-muted-foreground mb-4">
-              Founded with a vision to create lasting change in Ghanaian communities, Mentors Foundation Ghana 
-              has been at the forefront of community development for over a decade. We believe that every 
-              individual has the potential to create positive change when given the right opportunities and support.
+              {isOurStoryExpanded ? (
+                <>
+                  Founded with a vision to create lasting change in Ghanaian communities, Mentors Foundation Ghana 
+                  has been at the forefront of community development for over a decade. We believe that every 
+                  individual has the potential to create positive change when given the right opportunities and support.
+                  <button onClick={() => setIsOurStoryExpanded(false)} className="text-primary hover:underline ml-2">Read less</button>
+                </>
+              ) : (
+                <>
+                  Founded with a vision to create lasting change in Ghanaian communities, Mentors Foundation Ghana 
+                  has been at the forefront of community development...
+                  <button onClick={() => setIsOurStoryExpanded(true)} className="text-primary hover:underline ml-2">Read more</button>
+                </>
+              )}
             </p>
             <p className="text-muted-foreground mb-4">
               Through our comprehensive programs in education, healthcare, economic empowerment, and 
