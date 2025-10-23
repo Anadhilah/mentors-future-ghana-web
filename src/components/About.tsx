@@ -37,7 +37,7 @@ const About = () => {
           {/* Founder Image */}
           <div className="rounded-full shadow-xl w-80 h-80 object-cover object-top mx-auto lg:mx-0">
             <img 
-              src="../../src/assets/ceo.jpg" // Replace with your actual image name
+              src={ceo} 
               alt="Rev. Bernard Ofori-Attah, Founder of Mentors Foundation Ghana"
               className="rounded-lg shadow-lg w-full h-96 object-cover"
             />
