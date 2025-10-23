@@ -12,7 +12,7 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="py-20 bg-secondary/50">
+    <section id="about" className="p-30 bg-secondary/50">
       <div className="container mx-auto px-4 py-8">
        
 
