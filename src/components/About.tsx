@@ -86,12 +86,12 @@ const About = () => {
               has been at the forefront of community development for over a decade. We believe that every 
               individual has the potential to create positive change when given the right opportunities and support.
             </p>
-            <p className="text-muted-foreground mb-6">
+            <p className="text-muted-foreground mb-4">
               Through our comprehensive programs in education, healthcare, economic empowerment, and 
               environmental sustainability, we work hand-in-hand with local communities to address 
               their most pressing challenges and build brighter futures.
             </p>
-            <p>
+            <p className="text-muted-foreground mb-4">
               The Mentors Foundation Ghana has over 200 Volunteers in Africa particularly Mozambique, 
               Nigeria, Kenya, Ivory Coast etc. and across  the 16 regions of Ghana majority being Nurses, 
               Medical Doctors , Pharmacist, Social work professionals etc. assisting with the education of 
