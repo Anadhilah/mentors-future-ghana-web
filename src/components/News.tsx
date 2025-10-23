@@ -11,7 +11,7 @@ import troko2 from '../assets/troko2.jpg';
 import uog from '../assets/uog.avif';
 import screen from '../assets/screen.jpg';
 import germany from '../assets/germany.jpg';
-import high from '../assets/high.jpg';
+import high from '../assets/High.jpg';
 
 const News = () => {
 const newsItems = [
