@@ -15,7 +15,7 @@ const ContactPage = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat transform transition-transform duration-[12s] ease-in-out hover:scale-110"
           style={{
-          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/Mentors Foundation Globalrsgh8.jpg")',
+          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/mentorsgh8.jpg")',
             backgroundSize: 'cover', // Ensures the image covers the entire area
             backgroundPosition: 'center 1%', // Change to 'center top' to bring heads down
             zIndex: 0,          }}

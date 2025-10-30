@@ -26,7 +26,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/Mentors Foundation Globalrsgh7.jpg")',
+          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/mentorsgh7.jpg")',
             backgroundSize: 'cover', // Ensures the image covers the entire area
             backgroundPosition: 'center 25%', // Change to 'center top' to bring heads down
             zIndex: 0,

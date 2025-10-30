@@ -15,20 +15,21 @@ import int from '../assets/int.jpg';
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const navigate = useNavigate();
+  const [category, setCategory] = useState<'all' | 'events' | 'community' | 'education'>('all');
 
   const images = [
-    { src: '/images/Mentors Foundation Globalrsgh.jpg', caption: 'Community Engagement Program' },
-    { src: '/images/Mentors Foundation Globalrsgh1.jpg', caption: 'Youth Development Workshop' },
-    { src: '/images/Mentors Foundation Globalrsgh2.jpg', caption: 'Educational Outreach' },
-    { src: '/images/Mentors Foundation Globalrsgh5.jpg', caption: 'Skills Training Session' },
-    { src: '/images/Mentors Foundation Globalrsgh6.jpg', caption: 'Team Building Event' },
-    { src: '/images/Mentors Foundation Globalrsgh7.jpg', caption: 'Community Service Day' },
-    { src: '/images/Mentors Foundation Globalrsgh8.jpg', caption: 'Leadership Workshop' },
-    { src: '/images/Mentors Foundation Globalrsgh9.jpg', caption: 'Volunteer Program' },
-    { src: outing, caption: 'Team Outing' },
-    { src: dinner, caption: 'Annual Dinner' },
-    { src: germany, caption: 'International Partnership' },
-    { src: int, caption: 'Global Initiative Meeting' },
+    { src: '/images/mentorsgh.jpg', caption: 'Community Engagement Program', category: 'community' },
+    { src: '/images/mentorsgh1.jpg', caption: 'Youth Development Workshop', category: 'education' },
+    { src: '/images/mentorsgh2.jpg', caption: 'Educational Outreach', category: 'education' },
+    { src: '/images/mentorsgh5.jpg', caption: 'Skills Training Session', category: 'education' },
+    { src: '/images/mentorsgh6.jpg', caption: 'Team Building Event', category: 'events' },
+    { src: '/images/mentorsgh7.jpg', caption: 'Community Service Day', category: 'community' },
+    { src: '/images/mentorsgh8.jpg', caption: 'Leadership Workshop', category: 'education' },
+    { src: '/images/mentorsgh9.jpg', caption: 'Volunteer Program', category: 'community' },
+    { src: outing, caption: 'Team Outing', category: 'events' },
+    { src: dinner, caption: 'Annual Dinner', category: 'events' },
+    { src: germany, caption: 'International Partnership', category: 'events' },
+    { src: int, caption: 'Global Initiative Meeting', category: 'events' },
   ];
 
   const containerVariants = {
@@ -52,10 +53,14 @@ const Gallery = () => {
     }
   };
 
+  const filteredImages = images.filter(img => 
+    category === 'all' ? true : img.category === category
+  );
+
   return (
     <section className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-8">
-        {/* Navigation Header */}
+        {/* Top Navigation */}
         <div className="flex items-center justify-between mb-8">
           <Button 
             variant="ghost" 
@@ -72,7 +77,7 @@ const Gallery = () => {
         </div>
 
         {/* Gallery Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <motion.h1 
             className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary/80 to-primary/60"
             initial={{ opacity: 0, y: -20 }}
@@ -82,22 +87,36 @@ const Gallery = () => {
             Our Gallery
           </motion.h1>
           <motion.p 
-            className="text-xl text-muted-foreground max-w-3xl mx-auto"
+            className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             Capturing moments of impact, transformation, and community engagement across our journey.
           </motion.p>
+
+          {/* Category Filter */}
+          <div className="flex flex-wrap justify-center gap-3 mb-8">
+            {['all', 'events', 'community', 'education'].map((cat) => (
+              <Button
+                key={cat}
+                variant={category === cat ? "default" : "outline"}
+                onClick={() => setCategory(cat as any)}
+                className="capitalize"
+              >
+                {cat}
+              </Button>
+            ))}
+          </div>
         </div>
 
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
-          {images.map((image, index) => (
+          {filteredImages.map((image, index) => (
             <motion.div 
               key={index}
               variants={itemVariants}
@@ -105,7 +124,7 @@ const Gallery = () => {
               whileHover={{ y: -5 }}
             >
               <Card 
-                className="overflow-hidden cursor-pointer bg-card border-2 border-border/50 hover:border-primary/50 transition-all duration-300"
+                className="overflow-hidden cursor-pointer border-2 border-border/50 hover:border-primary/50 transition-all duration-300"
                 onClick={() => setSelectedImage(image.src)}
               >
                 <div className="relative aspect-[4/3]">
@@ -115,9 +134,14 @@ const Gallery = () => {
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end justify-center pb-6">
-                    <p className="text-white text-center px-6 py-2 text-lg font-medium">
-                      {image.caption}
-                    </p>
+                    <div className="text-center">
+                      <p className="text-white px-6 text-lg font-medium">
+                        {image.caption}
+                      </p>
+                      <span className="text-primary-foreground/80 text-sm capitalize">
+                        {image.category}
+                      </span>
+                    </div>
                   </div>
                 </div>
               </Card>
