@@ -123,19 +123,19 @@ const About = () => {
             <p className="text-muted-foreground mb-4">
               {isMoreStoryExpanded ? (
                 <>
-                  The Mentors Foundation Globalrs Foundation Ghana has over 200 volunteers in Africa, particularly Mozambique, 
+                  The Mentors Foundation Global has over 200 volunteers in Africa, particularly Mozambique, 
                   Nigeria, Kenya, Ivory Coast, etc., and across the 16 regions of Ghana — majority being nurses, 
                   medical doctors, pharmacists, and social work professionals assisting with mental health education 
                   and counseling in institutions across Africa. The organization has affiliates, volunteers, membership, 
                   and supporters in Nigeria, Kenya, UK, USA, Ivory Coast, Rwanda, UAE, etc. Bernard is a global youth 
-                  Mentors Foundation  International leader, brand ambassador, and UN Peace Advocate honored with numerous awards and recognitions 
+                  Mentors Foundation  Global leader, brand ambassador, and UN Peace Advocate honored with numerous awards and recognitions 
                   globally. He has worked for KPMG Ghana, Fidelity Bank, Shell/Vivo Energy Ghana, Zoe, Akyea & Co. Law Firm, 
                   and World Vision Ghana.
                   <button onClick={toggleMoreStoryText} className="text-primary hover:underline ml-2">Read less</button>
                 </>
               ) : (
                 <>
-                  The Mentors Foundation Globalrs Foundation Ghana has over 200 Volunteers in Africa particularly Mozambique, 
+                  The Mentors Foundation Global has over 200 Volunteers in Africa particularly Mozambique, 
                   Nigeria, Kenya, Ivory Coast etc...
                   <button onClick={toggleMoreStoryText} className="text-primary hover:underline ml-2">Read more</button>
                 </>

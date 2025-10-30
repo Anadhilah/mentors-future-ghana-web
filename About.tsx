@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from './src/components/ui/card';
 import { Target, Eye, Heart } from 'lucide-react';
 
 const About = () => {
@@ -10,18 +10,20 @@ const About = () => {
   };
 
   const fullText = `
-    Mentors Foundation Globalrs Foundation LBG, a charitable organization focused on poverty reduction, education, 
-    and conflict resolution, Mentors Foundation  International and women empowerment since 2016. Mentors Foundation Globalrs Foundation Ghana 
-    partnered with institutions including the Young African Leadership Initiative (YALI-USAID) 
-    with the mandate of supplying experienced Professionals from different backgrounds to Mentors Foundation Globalr 
-    youths from different African countries in Entrepreneur development in 2017 and 2018. 
-    He again partnered with The Electoral Commission, the National Commission for Civic Education, 
-    Presbyterian Church of Ghana during the 2020 electioneering period on peace talk. In 2021, 
-    the Ministry of Gender, Children and Social Protection came on board to clear and feed 
-    the street children with the aim of data collection. In 2022 till date, the Ghana Prison Service, 
-    the Ghana Police Service, University of Ghana, Legon, Rutgers University New Jersey USA have 
-    all assisted in championing various initiatives with several acknowledgements and awards for 
-    the impact in Ghana, Africa and the World.
+    Mentors Foundation Global LBG is a charitable organization focused on poverty reduction, education, 
+    and conflict resolution. Since 2016, we have been promoting women empowerment and community development. 
+    In 2017 and 2018, we partnered with the Young African Leadership Initiative (YALI-USAID) 
+    to connect experienced professionals with youth from different African countries for entrepreneurship development.
+    
+    Our partnerships have grown to include collaborations with The Electoral Commission, 
+    the National Commission for Civic Education, and the Presbyterian Church of Ghana during the 2020 
+    electioneering period for peace initiatives. In 2021, we worked with the Ministry of Gender, 
+    Children and Social Protection on street children welfare and data collection.
+    
+    From 2022 to present, we have expanded our partnerships to include the Ghana Prison Service, 
+    Ghana Police Service, University of Ghana, Legon, and Rutgers University New Jersey USA. 
+    These collaborations have led to numerous successful initiatives, acknowledgements, and awards 
+    recognizing our impact in Ghana, Africa, and globally.
   `;
 
   const truncatedText = fullText.split(' ').slice(0, 50).join(' ') + '...';
@@ -30,10 +32,10 @@ const About = () => {
     <section id="about" className="py-20 bg-secondary/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">About Mentors Foundation Globalrs Foundation Ghana</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">About Mentors Foundation Global</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             We are a nonprofit organization committed to fostering sustainable development 
-            and empowering communities across Ghana through education, Mentors Foundation  International, and innovative programs.
+            and empowering communities across Ghana through education, Mentors Foundation  Global, and innovative programs.
           </p>
         </div>
 
@@ -52,8 +54,8 @@ const About = () => {
           </div>
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-              alt="Community members working together"
+              src="./src/assets/mentorsgh.jpg"
+              alt="Mentors Foundation Global Community"
               className="rounded-lg shadow-lg w-full h-80 object-cover"
             />
           </div>
