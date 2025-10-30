@@ -85,7 +85,7 @@ const newsItems = [
     image: germany
   },
   {
-    title: "End of Year Dinner and Awards Night at Peduase Valley Resort Hotel, Aburi-Eastern Region-Ghana",
+    title: "End of Year Dinner and Awards Night at Tchetche Hotel-East Legon Accra Ghana",
     excerpt: "",
     date: "December 2025",
     category: "Fun",
