@@ -82,7 +82,7 @@ const About = () => {
             </p>
 
             <p className="text-muted-foreground">
-              Since founding Mentors Foundation Global in 2016, Bernard has led education initiatives across Africa
+              Since founding Mentors Foundation Global in 2016, Rev  Bernard has led education initiatives across Africa
               supporting vulnerable populations, including prisoners, street children, widows, women, girls, and orphans—
               through Mentors Foundation  International, skills training, mental health education, and advocacy. His organization collaborates 
               with major partners such as University of Ghana, Ghana Prisons Service, Rutgers University New Jersey (USA), 
