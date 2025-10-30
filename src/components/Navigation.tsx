@@ -100,6 +100,12 @@ const Navigation = () => {
               News
             </Link>
             <Link 
+              to="/gallery"
+              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+            >
+              Gallery
+            </Link>
+            <Link 
               to="/contact"
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
@@ -171,6 +177,13 @@ const Navigation = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
+              </Link>
+              <Link 
+                to="/gallery"
+                className="text-sm font-medium text-foreground hover:text-primary text-left"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Gallery
               </Link>
               <div className="flex flex-col space-y-2 pt-4">
                 <Button variant="outline" size="sm" onClick={handleVolunteer}>
