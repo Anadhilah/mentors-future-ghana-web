@@ -41,8 +41,10 @@ const Hero = () => {
             <span className="text-yellow-400"> Transforming Lives</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
-            Mentors Foundation Global is dedicated to creating sustainable change through education, 
-            Mentors Foundation  International, and community development across Ghana.
+            Mentors Foundation Global is Dedicated to creating sustainable change through education,
+             Youth Entrepreneur Skill Job Training, Climate Change Initiatives, Girls and Women Empowerment, 
+             Prisons Reform, Youth In Agribusiness and other community development initiatives in Ghana,
+              Africa and the World at Large
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
