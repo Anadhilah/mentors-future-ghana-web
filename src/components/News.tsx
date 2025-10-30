@@ -77,13 +77,7 @@ const newsItems = [
     category: "Health",
     image: screen
   },
-  {
-    title: "Germany Mental Health Conference",
-    excerpt: "",
-    date: "October 2025",
-    category: "Education",
-    image: germany
-  },
+ 
   {
     title: "End of Year Dinner and Awards Night at Tchetche Hotel-East Legon Accra Ghana",
     excerpt: "",
