@@ -144,8 +144,8 @@ const About = () => {
           </div>
           <div className="relative">
             <img 
-              src="/images/Mentors Foundation Globalrsgh1.jpg" 
-              alt="Mentors Foundation Globalrs Foundation team at an event"
+              src="/images/mentorsgh1.jpg" 
+              alt="Mentors Foundation Global Foundation team at an event"
               className="rounded-lg shadow-lg w-full h-80 object-cover"
             />
           </div>
