@@ -101,7 +101,7 @@ const About = () => {
               {isOurStoryExpanded ? (
                 <>
                  Founded with a vision to create lasting change since 2016, we’ve made a lasting impact on humanity, leaving an indelible 
-                 mark not only in Ghana, but across Africa and the world. As a proudly Ghanaian and African organization, we've earned global
+                 mark not only in Ghana, but across Africa and the world. As a proud Ghanaian and African organization, we've earned global
                   recognition for our contributions, transcending borders and inspiring positive change worldwide
                   <button onClick={toggleStoryText} className="text-primary hover:underline ml-2">Read less</button>
                 </>

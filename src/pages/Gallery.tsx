@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom';
 import outing from '../assets/outing.jpg';
 import dinner from '../assets/dinner.jpg';
 import germany from '../assets/germany.jpg';
-import int from '../assets/int.jpg';
+import init from '/images/glob.jpg';;
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -20,16 +20,16 @@ const Gallery = () => {
   const images = [
     { src: '/images/mentorsgh.jpg', caption: 'Community Engagement Program', category: 'community' },
     { src: '/images/mentorsgh1.jpg', caption: 'Youth Development Workshop', category: 'education' },
-    { src: '/images/mentorsgh2.jpg', caption: 'Educational Outreach', category: 'education' },
-    { src: '/images/mentorsgh5.jpg', caption: 'Skills Training Session', category: 'education' },
-    { src: '/images/mentorsgh6.jpg', caption: 'Team Building Event', category: 'events' },
-    { src: '/images/mentorsgh7.jpg', caption: 'Community Service Day', category: 'community' },
+    { src: '/images/learn.jpg', caption: 'Educational Outreach', category: 'education' },
+    { src: '/images/skill3.jpg', caption: 'Skills Training Session', category: 'education' },
+    { src: '/images/team.jpg', caption: 'Team Building Event', category: 'events' },
+    { src: '/images/out.jpg', caption: 'Community Service Day', category: 'community' },
     { src: '/images/canada.jpg', caption: 'Leadership Conference', category: 'education' },
     { src: '/images/mentorsgh9.jpg', caption: 'Volunteer Program', category: 'community' },
     { src: outing, caption: 'Team Outing', category: 'events' },
     { src: dinner, caption: 'Annual Dinner', category: 'events' },
     { src:  '/images/lead.jpg', caption: 'Global Climate Change Conference', category: 'events' },
-    { src: int, caption: 'Global Initiative Meeting', category: 'events' },
+    { src: init, caption: 'Global Initiative Meeting', category: 'events' },
   ];
 
   const containerVariants = {

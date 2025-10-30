@@ -15,13 +15,13 @@ const Testimonials = () => {
       image: miss
     },
     {
-      quote: "Through Mentors Foundation Globalrs Foundation, I had the opportunity to lead and participate in impactful programs such as health screenings, mental health education, and international conferences. These experiences taught me the importance of raising awareness on mental health and showed me how such initiatives can transform lives in our communities. Despite challenges like funding and limited resources, I’ve learned resilience and the value of teamwork in creating lasting change.",
+      quote: "Through Mentors Foundation Global, I had the opportunity to lead and participate in impactful programs such as health screenings, mental health education, and international conferences. These experiences taught me the importance of raising awareness on mental health and showed me how such initiatives can transform lives in our communities. Despite challenges like funding and limited resources, I’ve learned resilience and the value of teamwork in creating lasting change.",
       name: "Agnes Amoafo",
       role: "Senior Nurse",
       image: agnes
     },
     {
-      quote: "Volunteering with Mentors Foundation Globalrs Foundation has given me valuable experience in report and minutes writing, while exposing me to incredible opportunities and places.",
+      quote: "Volunteering with Mentors Foundation Global has given me valuable experience in report and minutes writing, while exposing me to incredible opportunities and places.",
       name: "Joana Twene ",
       role: "Volunteer",
       image: joana
@@ -33,7 +33,7 @@ const Testimonials = () => {
       image: doro
     },
      {
-      quote: "Volunteering with Mentors Foundation Globalrs Foundation has been an incredible learning experience. From assisting with health screenings at Nsawam Women’s Prison to participating in the Ghana Youth Leaders Award, I gained practical skills, learned the importance of teamwork, and witnessed the impact of community outreach firsthand. It reinforced the need for empathy, education, and continued advocacy for mental health.",
+      quote: "Volunteering with Mentors Foundation Global has been an incredible learning experience. From assisting with health screenings at Nsawam Women’s Prison to participating in the Ghana Youth Leaders Award, I gained practical skills, learned the importance of teamwork, and witnessed the impact of community outreach firsthand. It reinforced the need for empathy, education, and continued advocacy for mental health.",
       name: "Joelle Kohlmann",
       role: "International Volunteer",
       image: int

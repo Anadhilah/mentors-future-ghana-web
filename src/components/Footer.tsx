@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
                 <Heart className="h-6 w-6 text-primary-foreground" />
               </div>
               <div className="flex flex-col">
-                <span className="text-lg font-bold">Mentors Foundation Globalrs Foundation</span>
+                <span className="text-lg font-bold">Mentors Foundation Global</span>
                 <span className="text-xs text-gray-400">Ghana</span>
               </div> */}
             </div>

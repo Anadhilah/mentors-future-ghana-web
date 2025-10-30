@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const Impact = () => {
   const stats = [
-    { number: "500+", label: "Lives Directly Impacted", description: "Individuals who have benefited from our programs" },
+    { number: "1 M +", label: "Lives Directly Impacted", description: "Individuals who have benefited from our programs globally" },
     { number: "25+", label: "Communities Served", description: "Rural and urban communities across Ghana" },
     { number: "100+", label: "Active Volunteers", description: "Dedicated individuals making a difference" },
     { number: "50+", label: "Scholarships Awarded", description: "Students supported through education programs" },

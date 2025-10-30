@@ -60,7 +60,7 @@ const Navigation = () => {
           <Link to="/" className="flex items-center space-x-2">
             <img
               src={logo}
-              alt="Mentors Foundation Globalrs Foundation Logo"
+              alt="Mentors Foundation Global Logo"
               className="h-14 w-auto rounded-md"
 
 

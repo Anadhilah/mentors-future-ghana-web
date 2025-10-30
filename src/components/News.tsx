@@ -14,10 +14,10 @@ import {
 import outing from '../assets/outing.jpg';
 import dinner from '../assets/dinner.jpg';
 import mtn from '../assets/mtn.jpg';
-import trokosi from '../assets/trokosi.jpg';
-import troko2 from '../assets/troko2.jpg';
+import trokosi from '/images/trokosii.jpg';
+import troko2 from '/images/troko3.jpg';
 import uog from '../assets/uog.avif';
-import screen from '../assets/screen.jpg';
+import screen from '/images/prison.jpg';;
 import germany from '../assets/germany.jpg';
 import high from '../assets/High.jpg';
 
@@ -71,7 +71,7 @@ const newsItems = [
     image: uog
   },
   {
-    title: "Tamale Central Prison Health Screening & Skill Job Training Outreach",
+    title: "NSAWAM female Prison Health Screening",
     excerpt: "",
     date: "Aug/September 2025",
     category: "Health",
