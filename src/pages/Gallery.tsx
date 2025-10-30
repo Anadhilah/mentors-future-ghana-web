@@ -17,14 +17,14 @@ const Gallery = () => {
   const navigate = useNavigate();
 
   const images = [
-    { src: '/images/mentorsgh.jpg', caption: 'Community Engagement Program' },
-    { src: '/images/mentorsgh1.jpg', caption: 'Youth Development Workshop' },
-    { src: '/images/mentorsgh2.jpg', caption: 'Educational Outreach' },
-    { src: '/images/mentorsgh5.jpg', caption: 'Skills Training Session' },
-    { src: '/images/mentorsgh6.jpg', caption: 'Team Building Event' },
-    { src: '/images/mentorsgh7.jpg', caption: 'Community Service Day' },
-    { src: '/images/mentorsgh8.jpg', caption: 'Leadership Workshop' },
-    { src: '/images/mentorsgh9.jpg', caption: 'Volunteer Program' },
+    { src: '/images/Mentors Foundation Internationalrsgh.jpg', caption: 'Community Engagement Program' },
+    { src: '/images/Mentors Foundation Internationalrsgh1.jpg', caption: 'Youth Development Workshop' },
+    { src: '/images/Mentors Foundation Internationalrsgh2.jpg', caption: 'Educational Outreach' },
+    { src: '/images/Mentors Foundation Internationalrsgh5.jpg', caption: 'Skills Training Session' },
+    { src: '/images/Mentors Foundation Internationalrsgh6.jpg', caption: 'Team Building Event' },
+    { src: '/images/Mentors Foundation Internationalrsgh7.jpg', caption: 'Community Service Day' },
+    { src: '/images/Mentors Foundation Internationalrsgh8.jpg', caption: 'Leadership Workshop' },
+    { src: '/images/Mentors Foundation Internationalrsgh9.jpg', caption: 'Volunteer Program' },
     { src: outing, caption: 'Team Outing' },
     { src: dinner, caption: 'Annual Dinner' },
     { src: germany, caption: 'International Partnership' },

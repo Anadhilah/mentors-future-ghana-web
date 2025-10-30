@@ -100,7 +100,7 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold mb-1">Email Addresses</h4>
                     <p className="text-muted-foreground">
-                      General: mentorsnbp@gmail.com<br />
+                      General: Mentors Foundation Internationalrsnbp@gmail.com<br />
                        
                     </p>
                   </div>

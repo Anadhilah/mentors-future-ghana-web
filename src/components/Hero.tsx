@@ -26,7 +26,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/mentorsgh7.jpg")',
+          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/Mentors Foundation Internationalrsgh7.jpg")',
             backgroundSize: 'cover', // Ensures the image covers the entire area
             backgroundPosition: 'center 25%', // Change to 'center top' to bring heads down
             zIndex: 0,
@@ -41,8 +41,8 @@ const Hero = () => {
             <span className="text-yellow-400"> Transforming Lives</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
-            Mentors Foundation Ghana is dedicated to creating sustainable change through education, 
-            mentorship, and community development across Ghana.
+            Mentors Foundation Internationalrs Foundation Ghana is dedicated to creating sustainable change through education, 
+            Mentors Foundation Internationalrship, and community development across Ghana.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

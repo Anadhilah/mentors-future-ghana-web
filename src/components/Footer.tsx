@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
                 <Heart className="h-6 w-6 text-primary-foreground" />
               </div>
               <div className="flex flex-col">
-                <span className="text-lg font-bold">Mentors Foundation</span>
+                <span className="text-lg font-bold">Mentors Foundation Internationalrs Foundation</span>
                 <span className="text-xs text-gray-400">Ghana</span>
               </div> */}
             </div>
@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
                 <Instagram className="h-4 w-4" />
               </a>
               <a
-                href="http://linkedin.com/in/bernard-ofori-atta-mentors-foundation-ghana-a55b2233
+                href="http://linkedin.com/in/bernard-ofori-atta-Mentors Foundation Internationalrs-foundation-ghana-a55b2233
 "
                 target="_blank"
                 rel="noopener noreferrer"
@@ -135,7 +135,7 @@ const Footer: React.FC = () => {
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-primary" />
                 <span className="text-gray-300 text-sm">
-                  mentorsnbp@gmail.com <br />
+                  Mentors Foundation Internationalrsnbp@gmail.com <br />
                   oforiattabenard@gmail.com
                 </span>
               </div>
@@ -147,7 +147,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} Mentors Foundation Ghana. All rights
+              © {new Date().getFullYear()} Mentors Foundation Internationalrs Foundation Ghana. All rights
               reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
