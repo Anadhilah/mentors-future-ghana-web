@@ -94,7 +94,7 @@ const Programs = () => {
         },
         {
           title: "Youth Empowerment",
-          description: "Mentors Foundation Globalrs Foundation Ghana has reached over 10,000 youth across Africa through virtual and in-person education, in collaboration with the Africa Law Students Association, focusing on mental health awareness and youth entrepreneurship Mentors Foundation  International partnering with YALI West Africa."
+          description: "Mentors Foundation Global has reached over 10,000 youth across Africa through virtual and in-person education, in collaboration with the Africa Law Students Association, focusing on mental health awareness and youth entrepreneurship Mentors Foundation  International partnering with YALI West Africa."
         },
         {
           title: "Prison Reform",
@@ -102,7 +102,7 @@ const Programs = () => {
         },
         {
           title: "Peace Advocacy and Community Support",
-          description: "Since 2016, Mentors Foundation Globalrs Foundation Ghana's peace advocacy initiatives, \"Operation Feed the Street and Orphans,\" have supported over 100,000 beneficiaries, demonstrating the organization's commitment to community development and humanitarian assistance."
+          description: "Since 2016, Mentors Foundation Global's peace advocacy initiatives, \"Operation Feed the Street and Orphans,\" have supported over 100,000 beneficiaries, demonstrating the organization's commitment to community development and humanitarian assistance."
         }
       ],
       conclusion: "By promoting mental health education and providing support services, the organization aims to reduce stigma around mental health issues, equip individuals with coping mechanisms, and foster a more compassionate society. This aligns with the growing recognition of mental health's importance in Africa, where 1 in 7 adolescents struggle with mental health conditions. Integrating mental health education into school curricula can have long-term benefits, including better academic performance, social outcomes, and reduced risky behaviors."

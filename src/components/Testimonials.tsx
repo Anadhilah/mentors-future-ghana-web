@@ -27,7 +27,7 @@ const Testimonials = () => {
       image: joana
     },
      {
-      quote: "Attending the Project 2024 launch was an eye-opening experience. The sessions on mental health, prison reform, and anti-corruption highlighted the real challenges in our society and the incredible work Mentors Foundation Globalrs Foundation Ghana is doing to address them. I was inspired by the focus on rehabilitation, transparency, and community support, and it reaffirmed my commitment to making a positive impact.",
+      quote: "Attending the Project 2024 launch was an eye-opening experience. The sessions on mental health, prison reform, and anti-corruption highlighted the real challenges in our society and the incredible work Mentors Foundation Global is doing to address them. I was inspired by the focus on rehabilitation, transparency, and community support, and it reaffirmed my commitment to making a positive impact.",
       name: "Dorothy Addisson",
       role: "Psychologist",
       image: doro
