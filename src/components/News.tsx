@@ -50,7 +50,7 @@ const newsItems = [
   {
     title: "Proposed MTN Foundation Sponsored Skill Job Training",
     excerpt: "Launching comprehensive job training program",
-    content: "Exciting partnership with MTN Foundation to provide extensive skill-based job training from August 2025 to December 2027. This program will offer practical skills training, Mentors Foundation Internationalrship, and job placement support to empower youth in our communities with valuable workforce skills.",
+    content: "Exciting partnership with MTN Foundation to provide extensive skill-based job training from August 2025 to December 2027. This program will offer practical skills training, Mentors Foundation  International, and job placement support to empower youth in our communities with valuable workforce skills.",
     date: "August 2025-December 2027",
     category: "Education",
     image: mtn

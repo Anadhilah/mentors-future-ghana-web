@@ -15,7 +15,7 @@ const AboutPage = () => {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage:
-              'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/Mentors Foundation Internationalrsgh.jpg")', // Ensure this path is correct
+              'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/Mentors Foundation Globalrsgh.jpg")', // Ensure this path is correct
             backgroundSize: 'cover', // Ensures the image covers the entire area
             backgroundPosition: 'center 25%', // Change to 'center top' to bring heads down
             zIndex: 0,

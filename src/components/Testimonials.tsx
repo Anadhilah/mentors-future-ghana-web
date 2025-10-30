@@ -15,25 +15,25 @@ const Testimonials = () => {
       image: miss
     },
     {
-      quote: "Through Mentors Foundation Internationalrs Foundation, I had the opportunity to lead and participate in impactful programs such as health screenings, mental health education, and international conferences. These experiences taught me the importance of raising awareness on mental health and showed me how such initiatives can transform lives in our communities. Despite challenges like funding and limited resources, I’ve learned resilience and the value of teamwork in creating lasting change.",
+      quote: "Through Mentors Foundation Globalrs Foundation, I had the opportunity to lead and participate in impactful programs such as health screenings, mental health education, and international conferences. These experiences taught me the importance of raising awareness on mental health and showed me how such initiatives can transform lives in our communities. Despite challenges like funding and limited resources, I’ve learned resilience and the value of teamwork in creating lasting change.",
       name: "Agnes Amoafo",
       role: "Senior Nurse",
       image: agnes
     },
     {
-      quote: "Volunteering with Mentors Foundation Internationalrs Foundation has given me valuable experience in report and minutes writing, while exposing me to incredible opportunities and places.",
+      quote: "Volunteering with Mentors Foundation Globalrs Foundation has given me valuable experience in report and minutes writing, while exposing me to incredible opportunities and places.",
       name: "Joana Twene ",
       role: "Volunteer",
       image: joana
     },
      {
-      quote: "Attending the Project 2024 launch was an eye-opening experience. The sessions on mental health, prison reform, and anti-corruption highlighted the real challenges in our society and the incredible work Mentors Foundation Internationalrs Foundation Ghana is doing to address them. I was inspired by the focus on rehabilitation, transparency, and community support, and it reaffirmed my commitment to making a positive impact.",
+      quote: "Attending the Project 2024 launch was an eye-opening experience. The sessions on mental health, prison reform, and anti-corruption highlighted the real challenges in our society and the incredible work Mentors Foundation Globalrs Foundation Ghana is doing to address them. I was inspired by the focus on rehabilitation, transparency, and community support, and it reaffirmed my commitment to making a positive impact.",
       name: "Dorothy Addisson",
       role: "Psychologist",
       image: doro
     },
      {
-      quote: "Volunteering with Mentors Foundation Internationalrs Foundation has been an incredible learning experience. From assisting with health screenings at Nsawam Women’s Prison to participating in the Ghana Youth Leaders Award, I gained practical skills, learned the importance of teamwork, and witnessed the impact of community outreach firsthand. It reinforced the need for empathy, education, and continued advocacy for mental health.",
+      quote: "Volunteering with Mentors Foundation Globalrs Foundation has been an incredible learning experience. From assisting with health screenings at Nsawam Women’s Prison to participating in the Ghana Youth Leaders Award, I gained practical skills, learned the importance of teamwork, and witnessed the impact of community outreach firsthand. It reinforced the need for empathy, education, and continued advocacy for mental health.",
       name: "Joelle Kohlmann",
       role: "International Volunteer",
       image: int

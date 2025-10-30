@@ -15,7 +15,7 @@ const ProgramsPage = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat transform hover:scale-105 transition-transform duration-[10s] ease-in-out"
           style={{
-            backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/Mentors Foundation Internationalrsgh2.jpg")',
+            backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/Mentors Foundation Globalrsgh2.jpg")',
              backgroundSize: 'cover', // Ensures the image covers the entire area
             backgroundPosition: 'center 20%', // Change to 'center top' to bring heads down
             zIndex: 0,

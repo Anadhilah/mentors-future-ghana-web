@@ -17,7 +17,7 @@ const ChatBot = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      text: "Hello! I'm here to help you learn about Mentors Foundation Internationalrs Foundation Ghana. I can answer questions about our programs, how to get involved, or anything else you'd like to know!",
+      text: "Hello! I'm here to help you learn about Mentors Foundation Globalrs Foundation Ghana. I can answer questions about our programs, how to get involved, or anything else you'd like to know!",
       isUser: false,
       timestamp: new Date()
     }
@@ -35,12 +35,12 @@ const ChatBot = () => {
   }, [messages]);
 
   const botResponses: { [key: string]: string } = {
-    'programs': "We offer several programs including Education Support, Mentors Foundation Internationalrship, Community Development, and Health & Wellness initiatives. Each program is designed to create lasting impact in Ghanaian communities.",
-    'volunteer': "To volunteer with us, you can fill out our volunteer form in the 'Get Involved' section. We welcome volunteers for various activities including Mentors Foundation Internationalring, community outreach, and educational support.",
+    'programs': "We offer several programs including Education Support, Mentors Foundation  International, Community Development, and Health & Wellness initiatives. Each program is designed to create lasting impact in Ghanaian communities.",
+    'volunteer': "To volunteer with us, you can fill out our volunteer form in the 'Get Involved' section. We welcome volunteers for various activities including Mentors Foundation Globalring, community outreach, and educational support.",
     'donate': "You can support our mission by donating through our secure donation platform. We accept mobile money (MTN, Vodafone, AirtelTigo), bank transfers, and card payments. Every contribution helps us expand our programs.",
-    'contact': "You can reach us at info@Mentors Foundation Internationalrsfoundationghana.org or call us at +233 123 456 789. Our office is located in Accra, Ghana.",
-    'mission': "Our mission is to empower communities and transform lives through education, Mentors Foundation Internationalrship, and sustainable community development across Ghana.",
-    'about': "Mentors Foundation Internationalrs Foundation Ghana is dedicated to creating positive change through education, Mentors Foundation Internationalrship, and community development. We've impacted over 500 lives across 25+ communities.",
+    'contact': "You can reach us at info@Mentors Foundation Globalrsfoundationghana.org or call us at +233 123 456 789. Our office is located in Accra, Ghana.",
+    'mission': "Our mission is to empower communities and transform lives through education, Mentors Foundation  International, and sustainable community development across Ghana.",
+    'about': "Mentors Foundation Globalrs Foundation Ghana is dedicated to creating positive change through education, Mentors Foundation  International, and community development. We've impacted over 500 lives across 25+ communities.",
     'payment': "We accept multiple payment methods including Mobile Money (MTN, Vodafone, AirtelTigo), direct bank transfers, and credit/debit cards for your convenience.",
     'momo': "Yes! We accept all major mobile money services in Ghana including MTN Mobile Money, Vodafone Cash, and AirtelTigo Money for donations.",
     'default': "I'm here to help! You can ask me about our programs, how to volunteer, donation options, payment methods, our mission, or how to contact us. What would you like to know?"

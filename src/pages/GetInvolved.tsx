@@ -14,7 +14,7 @@ const GetInvolvedPage = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-[slide-in-right_15s_ease-in-out_infinite_alternate]"
           style={{
-            backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/Mentors Foundation Internationalrsgh6.jpg")', // Adjusted opacity
+            backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/Mentors Foundation Globalrsgh6.jpg")', // Adjusted opacity
               backgroundSize: 'cover', // Ensures the image covers the entire area
             backgroundPosition: 'center 25%', // Change to 'center top' to bring heads down
             zIndex: 0,

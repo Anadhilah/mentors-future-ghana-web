@@ -36,7 +36,7 @@ const Programs = () => {
 
   const partnershipInfo = {
     title: "WHY PARTNER WITH US",
-    introduction: "Partnering with Mentors Foundation Internationalrs Foundation can significantly advance mutual benefit in several ways:",
+    introduction: "Partnering with Mentors Foundation Globalrs Foundation can significantly advance mutual benefit in several ways:",
     benefits: [
       {
         title: "Increased Visibility",
@@ -63,16 +63,16 @@ const Programs = () => {
   };
 
   const programsImpact: ProgramsImpactType = {
-    "Education & Mentors Foundation Internationalrship": {
-      introduction: "Since its inception, our Education & Mentors Foundation Internationalrship program has been transforming lives through quality education and guidance.",
+    "Education & Mentors Foundation  International": {
+      introduction: "Since its inception, our Education & Mentors Foundation  International program has been transforming lives through quality education and guidance.",
       achievements: [
         {
           title: "Scholarship Success",
           description: "Awarded over 200 scholarships to promising students, with 85% of recipients successfully completing their education and securing meaningful employment."
         },
         {
-          title: "Mentors Foundation Internationalrship Network",
-          description: "Established a network of 150+ professional Mentors Foundation Internationalrs who have guided more than 1,000 students in career development and personal growth."
+          title: "Mentors Foundation  International Network",
+          description: "Established a network of 150+ professional Mentors Foundation Globalrs who have guided more than 1,000 students in career development and personal growth."
         },
         {
           title: "Educational Resources",
@@ -83,10 +83,10 @@ const Programs = () => {
           description: "Conducted leadership training programs for 500+ young individuals, with many participants now leading community initiatives."
         }
       ],
-      conclusion: "Our education and Mentors Foundation Internationalrship initiatives continue to create lasting impact, fostering a new generation of leaders and change-makers in Ghana."
+      conclusion: "Our education and Mentors Foundation  International initiatives continue to create lasting impact, fostering a new generation of leaders and change-makers in Ghana."
     } as ProgramImpact,
     "Healthcare Initiatives": {
-      introduction: "Mentors Foundation Internationalrs Foundation efforts in mental health education have significantly impacted Africa, particularly Ghana Since 2016.",
+      introduction: "Mentors Foundation Globalrs Foundation efforts in mental health education have significantly impacted Africa, particularly Ghana Since 2016.",
       achievements: [
         {
           title: "Mental Health Education in Tertiary Institutions",
@@ -94,7 +94,7 @@ const Programs = () => {
         },
         {
           title: "Youth Empowerment",
-          description: "Mentors Foundation Internationalrs Foundation Ghana has reached over 10,000 youth across Africa through virtual and in-person education, in collaboration with the Africa Law Students Association, focusing on mental health awareness and youth entrepreneurship Mentors Foundation Internationalrship partnering with YALI West Africa."
+          description: "Mentors Foundation Globalrs Foundation Ghana has reached over 10,000 youth across Africa through virtual and in-person education, in collaboration with the Africa Law Students Association, focusing on mental health awareness and youth entrepreneurship Mentors Foundation  International partnering with YALI West Africa."
         },
         {
           title: "Prison Reform",
@@ -102,7 +102,7 @@ const Programs = () => {
         },
         {
           title: "Peace Advocacy and Community Support",
-          description: "Since 2016, Mentors Foundation Internationalrs Foundation Ghana's peace advocacy initiatives, \"Operation Feed the Street and Orphans,\" have supported over 100,000 beneficiaries, demonstrating the organization's commitment to community development and humanitarian assistance."
+          description: "Since 2016, Mentors Foundation Globalrs Foundation Ghana's peace advocacy initiatives, \"Operation Feed the Street and Orphans,\" have supported over 100,000 beneficiaries, demonstrating the organization's commitment to community development and humanitarian assistance."
         }
       ],
       conclusion: "By promoting mental health education and providing support services, the organization aims to reduce stigma around mental health issues, equip individuals with coping mechanisms, and foster a more compassionate society. This aligns with the growing recognition of mental health's importance in Africa, where 1 in 7 adolescents struggle with mental health conditions. Integrating mental health education into school curricula can have long-term benefits, including better academic performance, social outcomes, and reduced risky behaviors."
@@ -161,8 +161,8 @@ const Programs = () => {
   const programs = [
     {
       icon: BookOpen,
-      title: "Education & Mentors Foundation Internationalrship",
-      description: "Providing quality education, scholarships, and Mentors Foundation Internationalrship programs to empower young minds and build future leaders.",
+      title: "Education & Mentors Foundation  International",
+      description: "Providing quality education, scholarships, and Mentors Foundation  International programs to empower young minds and build future leaders.",
       features: ["Scholarship Programs", "Tutoring Services", "Leadership Training", "Career Guidance"],
       color: "bg-blue-500"
     },
@@ -242,7 +242,7 @@ const Programs = () => {
               <DialogHeader>
                 <DialogTitle className="flex items-center gap-2">
                   {activeDialog === "Healthcare Initiatives" && <Heart className="h-6 w-6 text-red-500" />}
-                  {activeDialog === "Education & Mentors Foundation Internationalrship" && <BookOpen className="h-6 w-6 text-blue-500" />}
+                  {activeDialog === "Education & Mentors Foundation  International" && <BookOpen className="h-6 w-6 text-blue-500" />}
                   {activeDialog === "Community Development" && <Users className="h-6 w-6 text-green-500" />}
                   {activeDialog === "Environmental Sustainability" && <Leaf className="h-6 w-6 text-emerald-500" />}
                   {activeDialog}

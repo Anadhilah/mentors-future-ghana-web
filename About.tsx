@@ -10,10 +10,10 @@ const About = () => {
   };
 
   const fullText = `
-    Mentors Foundation Internationalrs Foundation LBG, a charitable organization focused on poverty reduction, education, 
-    and conflict resolution, Mentors Foundation Internationalrship and women empowerment since 2016. Mentors Foundation Internationalrs Foundation Ghana 
+    Mentors Foundation Globalrs Foundation LBG, a charitable organization focused on poverty reduction, education, 
+    and conflict resolution, Mentors Foundation  International and women empowerment since 2016. Mentors Foundation Globalrs Foundation Ghana 
     partnered with institutions including the Young African Leadership Initiative (YALI-USAID) 
-    with the mandate of supplying experienced Professionals from different backgrounds to Mentors Foundation Internationalr 
+    with the mandate of supplying experienced Professionals from different backgrounds to Mentors Foundation Globalr 
     youths from different African countries in Entrepreneur development in 2017 and 2018. 
     He again partnered with The Electoral Commission, the National Commission for Civic Education, 
     Presbyterian Church of Ghana during the 2020 electioneering period on peace talk. In 2021, 
@@ -30,10 +30,10 @@ const About = () => {
     <section id="about" className="py-20 bg-secondary/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">About Mentors Foundation Internationalrs Foundation Ghana</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">About Mentors Foundation Globalrs Foundation Ghana</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             We are a nonprofit organization committed to fostering sustainable development 
-            and empowering communities across Ghana through education, Mentors Foundation Internationalrship, and innovative programs.
+            and empowering communities across Ghana through education, Mentors Foundation  International, and innovative programs.
           </p>
         </div>
 

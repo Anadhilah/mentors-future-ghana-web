@@ -35,7 +35,7 @@ const About = () => {
           <div className="rounded-full shadow-xl w-80 h-80 object-cover object-top mx-auto lg:mx-0">
             <img 
               src={ceo} 
-              alt="Rev. Bernard Ofori-Attah, Founder of Mentors Foundation Internationalrs Foundation Ghana"
+              alt="Rev. Bernard Ofori-Attah, Founder of Mentors Foundation Globalrs Foundation Ghana"
               className="rounded-lg shadow-lg w-full h-96 object-cover"
             />
           </div>
@@ -82,9 +82,9 @@ const About = () => {
             </p>
 
             <p className="text-muted-foreground">
-              Since founding Mentors Foundation Internationalrs Foundation Ghana in 2016, Bernard has led education initiatives across Africa
+              Since founding Mentors Foundation Global in 2016, Bernard has led education initiatives across Africa
               supporting vulnerable populations, including prisoners, street children, widows, women, girls, and orphans—
-              through Mentors Foundation Internationalrship, skills training, mental health education, and advocacy. His organization collaborates 
+              through Mentors Foundation  International, skills training, mental health education, and advocacy. His organization collaborates 
               with major partners such as University of Ghana, Ghana Prisons Service, Rutgers University New Jersey (USA), 
               Ministry of Gender, Children and Social Protection, YALI/West Africa, Bel Aqua Minerals Company, Electoral Commission, 
               National Commission For Civic Education, Presbyterian Church of Ghana, Ghana Police Service, and project plans 
@@ -123,19 +123,19 @@ const About = () => {
             <p className="text-muted-foreground mb-4">
               {isMoreStoryExpanded ? (
                 <>
-                  The Mentors Foundation Internationalrs Foundation Ghana has over 200 volunteers in Africa, particularly Mozambique, 
+                  The Mentors Foundation Globalrs Foundation Ghana has over 200 volunteers in Africa, particularly Mozambique, 
                   Nigeria, Kenya, Ivory Coast, etc., and across the 16 regions of Ghana — majority being nurses, 
                   medical doctors, pharmacists, and social work professionals assisting with mental health education 
                   and counseling in institutions across Africa. The organization has affiliates, volunteers, membership, 
                   and supporters in Nigeria, Kenya, UK, USA, Ivory Coast, Rwanda, UAE, etc. Bernard is a global youth 
-                  Mentors Foundation Internationalrship leader, brand ambassador, and UN Peace Advocate honored with numerous awards and recognitions 
+                  Mentors Foundation  International leader, brand ambassador, and UN Peace Advocate honored with numerous awards and recognitions 
                   globally. He has worked for KPMG Ghana, Fidelity Bank, Shell/Vivo Energy Ghana, Zoe, Akyea & Co. Law Firm, 
                   and World Vision Ghana.
                   <button onClick={toggleMoreStoryText} className="text-primary hover:underline ml-2">Read less</button>
                 </>
               ) : (
                 <>
-                  The Mentors Foundation Internationalrs Foundation Ghana has over 200 Volunteers in Africa particularly Mozambique, 
+                  The Mentors Foundation Globalrs Foundation Ghana has over 200 Volunteers in Africa particularly Mozambique, 
                   Nigeria, Kenya, Ivory Coast etc...
                   <button onClick={toggleMoreStoryText} className="text-primary hover:underline ml-2">Read more</button>
                 </>
@@ -144,8 +144,8 @@ const About = () => {
           </div>
           <div className="relative">
             <img 
-              src="/images/Mentors Foundation Internationalrsgh1.jpg" 
-              alt="Mentors Foundation Internationalrs Foundation team at an event"
+              src="/images/Mentors Foundation Globalrsgh1.jpg" 
+              alt="Mentors Foundation Globalrs Foundation team at an event"
               className="rounded-lg shadow-lg w-full h-80 object-cover"
             />
           </div>
