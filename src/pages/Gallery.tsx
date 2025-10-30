@@ -24,11 +24,11 @@ const Gallery = () => {
     { src: '/images/mentorsgh5.jpg', caption: 'Skills Training Session', category: 'education' },
     { src: '/images/mentorsgh6.jpg', caption: 'Team Building Event', category: 'events' },
     { src: '/images/mentorsgh7.jpg', caption: 'Community Service Day', category: 'community' },
-    { src: '/images/mentorsgh8.jpg', caption: 'Leadership Workshop', category: 'education' },
+    { src: '/images/canada.jpg', caption: 'Leadership Conference', category: 'education' },
     { src: '/images/mentorsgh9.jpg', caption: 'Volunteer Program', category: 'community' },
     { src: outing, caption: 'Team Outing', category: 'events' },
     { src: dinner, caption: 'Annual Dinner', category: 'events' },
-    { src: germany, caption: 'International Partnership', category: 'events' },
+    { src:  '/images/lead.jpg', caption: 'Global Climate Change Conference', category: 'events' },
     { src: int, caption: 'Global Initiative Meeting', category: 'events' },
   ];
 
