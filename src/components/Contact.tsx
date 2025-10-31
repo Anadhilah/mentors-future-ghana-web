@@ -100,7 +100,8 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold mb-1">Email Addresses</h4>
                     <p className="text-muted-foreground">
-                      General: Mentors Foundation Ghana@gmail.com<br />
+                      General: bofori@mentorslbg.ngo <br />
+                      and  info@mentorslbg.ngo 
                        
                     </p>
                   </div>
@@ -113,7 +114,12 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold mb-1">Office Hours</h4>
                     <p className="text-muted-foreground">
-                      Monday - Sunday: 12:00 AM -11:59 PM<br />
+                      
+                         Monday - Friday: 0800 - 1700 GMT <br />
+                          Saturday: 0009 - 1500 GMT  <br /> 
+                    
+
+                       
 
                     </p>
                   </div>

@@ -135,8 +135,8 @@ const Footer: React.FC = () => {
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-primary" />
                 <span className="text-gray-300 text-sm">
-                  Mentors Foundation Globalrsnbp@gmail.com <br />
-                  oforiattabenard@gmail.com
+                   bofori@mentorslbg.ngo  <br />
+                   info@mentorslbg.ngo 
                 </span>
               </div>
             </div>
