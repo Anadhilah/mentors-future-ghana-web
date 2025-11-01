@@ -22,7 +22,7 @@ const Testimonials = () => {
     },
     {
       quote: "Volunteering with Mentors Foundation Global has given me valuable experience in report and minutes writing, while exposing me to incredible opportunities and places.",
-      name: "Joana Twene ",
+      name: "Joana Twenewaa ",
       role: "Volunteer",
       image: joana
     },
