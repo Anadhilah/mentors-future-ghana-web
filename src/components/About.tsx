@@ -26,17 +26,17 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="px-8 py-16 bg-secondary/50">
+    <section id="about" className="px-4 sm:px-8 py-24 mt-16 bg-secondary/50">
       <div className="container mx-auto">
        
         {/* Founder Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           {/* Founder Image */}
-          <div className="rounded-full shadow-xl w-80 h-80 object-cover object-top mx-auto lg:mx-0">
+          <div className="max-w-[320px] mx-auto lg:mx-0">
             <img 
               src={ceo} 
               alt="Rev. Bernard Ofori-Attah, Founder of Mentors Foundation Global "
-              className="rounded-lg shadow-lg w-full h-96 object-cover"
+              className="rounded-lg shadow-lg w-full aspect-[3/4] object-cover"
             />
           </div>
 

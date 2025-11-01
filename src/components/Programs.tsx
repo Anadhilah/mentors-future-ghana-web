@@ -111,10 +111,10 @@ const Programs = () => {
   const [activeDialog, setActiveDialog] = useState<string | null>(null);
 
   return (
-    <section className="container py-24 sm:py-32">
-      <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Programs & Initiatives</h2>
-        <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+    <section className="container mx-auto px-4 py-16 sm:py-24 lg:py-32">
+      <div className="text-center mb-12 sm:mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Our Programs & Initiatives</h2>
+        <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-2">
           We run comprehensive programs designed to address the most critical needs of 
           Ghanaian communities and create sustainable positive impact.
         </p>
@@ -166,9 +166,9 @@ const Programs = () => {
       {activeDialog && programs.map(program => (
         program.title === activeDialog && (
           <Dialog key={program.title} open={true} onOpenChange={() => setActiveDialog(null)}>
-            <DialogContent className="max-w-3xl">
+            <DialogContent className="max-w-3xl w-[95vw] sm:w-[85vw] md:w-auto">
               <DialogHeader>
-                <div className="relative aspect-[21/9] -mt-6 -mx-6 mb-4 overflow-hidden">
+                <div className="relative aspect-[16/9] sm:aspect-[21/9] -mt-6 -mx-6 mb-4 overflow-hidden">
                   <img
                     src={program.image}
                     alt={program.title}
