@@ -18,18 +18,18 @@ const Gallery = () => {
   const [category, setCategory] = useState<'all' | 'events' | 'community' | 'education'>('all');
 
   const images = [
-    { src: '/images/mentorsgh.jpg', caption: 'Community Engagement Program', category: 'community' },
-    { src: '/images/mentorsgh1.jpg', caption: 'Youth Development Workshop', category: 'education' },
-    { src: '/images/learn.jpg', caption: 'Educational Outreach', category: 'education' },
-    { src: '/images/skill3.jpg', caption: 'Skills Training Session', category: 'education' },
-    { src: '/images/team.jpg', caption: 'Team Building Event', category: 'events' },
-    { src: '/images/out.jpg', caption: 'Community Service Day', category: 'community' },
-    { src: '/images/canada.jpg', caption: 'Leadership Conference', category: 'education' },
-    { src: '/images/mentorsgh9.jpg', caption: 'Volunteer Program', category: 'community' },
+    { src: '/images/mentorsgh.jpg', caption: 'International Program- Rwanda High Commission', category: 'community' },
+    { src: '/images/mentorsgh1.jpg', caption: 'International Conference- Africa Prosperity Network Invitation', category: 'education' },
+    { src: '/images/learn.jpg', caption: '⁠Mentors Foundation Yearly Project Official Launch', category: 'education' },
+    { src: '/images/skill3.jpg', caption: 'Northern Ghana Team Skills Training & Development', category: 'education' },
+    { src: '/images/team.jpg', caption: 'Operation Feed and Cloth 1000 Street Children', category: 'events' },
+    { src: '/images/out.jpg', caption: '⁠Operation Feed and Cloth 1000 Street Children', category: 'community' },
+    { src: '/images/canada.jpg', caption: 'Global Climate Change Conference-Vaughan Ontario Canada ', category: 'education' },
+    { src: '/images/mentorsgh9.jpg', caption: 'Nsawam Prisons Medical Outreach ', category: 'community' },
     { src: outing, caption: 'Team Outing', category: 'events' },
-    { src: dinner, caption: 'Annual Dinner', category: 'events' },
+    { src: dinner, caption: 'Climate change conference- Canada', category: 'events' },
     { src:  '/images/lead.jpg', caption: 'Global Climate Change Conference', category: 'events' },
-    { src: init, caption: 'Global Initiative Meeting', category: 'events' },
+    { src: init, caption: '⁠International Mental Health outreach-Ghana High Commission-Nigeria, Abuja', category: 'events' },
   ];
 
   const containerVariants = {
