@@ -9,15 +9,15 @@ const AboutPage = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
 
-      {/* Hero Section with Background Image from Desktop (moved to /public/images) */}
+   
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage:
-              'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/mentorsgh.jpg")', // Ensure this path is correct
-            backgroundSize: 'cover', // Ensures the image covers the entire area
-            backgroundPosition: 'center 25%', // Change to 'center top' to bring heads down
+              'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/mentorsgh.jpg")', 
+            backgroundSize: 'cover',
+            backgroundPosition: 'center 25%', 
             zIndex: 0,
           }}
         />
