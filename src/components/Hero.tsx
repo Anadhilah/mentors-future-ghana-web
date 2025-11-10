@@ -46,7 +46,7 @@ const Hero = () => {
           <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
             Mentors Foundation Global is dedicated to creating sustainable change through education,
             Youth Entrepreneur Skill Job Training, Climate Change Initiatives, Girls and Women Empowerment,
-            Prisons Reform, Youth in Agribusiness and other community development initiatives in Ghana,
+            Prisons Reform, Mental Health Research, Mental health Awareness, Medical Screening and Treatment, Youth in Agribusiness and other community development initiatives in Ghana,
             Africa, and the world at large.
           </p>
 
